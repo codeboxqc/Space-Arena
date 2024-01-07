@@ -19,4 +19,6 @@ C:\clone\vcpkg>vcpkg install directxtex
 C:\clone\vcpkg>vcpkg install directxtex:x64-windows
 C:\clone\vcpkg>vcpkg install directxtex:x64-uwp
 
+NuGet\Install-Package Microsoft.DXSDK.D3DX -Version 9.29.952.8
+
  
