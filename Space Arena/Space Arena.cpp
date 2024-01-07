@@ -7,9 +7,8 @@
 #include "2x11.h"
 
 
- 
-const int X = 1920;
-const int Y = 1080;
+//int test();
+
 
 #define MAX_LOADSTRING 100
 
@@ -165,8 +164,11 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
         return FALSE;
     }
 
+
+    //test();
+
     StartTimer();
-    InitD3D(hWnd);
+     InitD3D(hWnd, X, Y, false);// Initialize Direct3D
 
 
     g_hKeyboardHook = SetWindowsHookEx(WH_KEYBOARD_LL, KeyboardProc, NULL, 0);

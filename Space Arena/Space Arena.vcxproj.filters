@@ -30,12 +30,24 @@
     <ClInclude Include="2x11.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MP3dx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Space Arena.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="2Dx11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="9x.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MP3dx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="soundx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
