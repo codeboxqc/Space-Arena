@@ -3,7 +3,7 @@ Visual studio 2022 c
 
 you need to install this package
 
-
+NuGet\Install-Package Microsoft.DXSDK.D3DX -Version 9.29.952.8
 NuGet\Install-Package directxtk_desktop_2019 -Version 2024.1.1.1
 
 NuGet\Install-Package directxtex_desktop_win10 -Version 2024.1.1.1
@@ -27,6 +27,6 @@ C:\clone\vcpkg>vcpkg install directxtex:x64-windows
 C:\clone\vcpkg>vcpkg install directxtex:x64-uwp
 
 
-NuGet\Install-Package Microsoft.DXSDK.D3DX -Version 9.29.952.8
+
 
  
