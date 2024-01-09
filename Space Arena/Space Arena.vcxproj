@@ -99,7 +99,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -128,7 +129,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -139,8 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="2x11.h" />
+    <ClInclude Include="AudioPlayer\Include\Sound.h" />
     <ClInclude Include="framework.h" />
-    <ClInclude Include="MP3dx.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Space Arena.h" />
     <ClInclude Include="targetver.h" />
@@ -148,9 +149,8 @@
   <ItemGroup>
     <ClCompile Include="2Dx11.cpp" />
     <ClCompile Include="9x.cpp" />
-    <ClCompile Include="MP3dx.cpp" />
-    <ClCompile Include="soundx.cpp" />
     <ClCompile Include="Space Arena.cpp" />
+    <ClCompile Include="testsound.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Space Arena.rc" />

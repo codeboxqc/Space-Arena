@@ -4,10 +4,13 @@
 #define INITGUID
 
 //#pragma comment(linker,"/NODEFAULTLIB:strmbasd.lib ") //dx 10
+#pragma comment(lib, "AudioPlayer/lib/Audio player.lib")
+#pragma comment(lib, "AudioPlayer/lib/Audio player.pdb")
 
 
 #include "2x11.h"
 
+#include "AudioPlayer/Include/Sound.h"
 
 //HWND main;
 
@@ -31,9 +34,16 @@ int bmp = 1;
 
 
 //void testmp3();
-//int test();
+// int test();
 
 static HMODULE d3d9_handle = 0;
+
+
+
+//std::string path = "a.wav";
+//Sound sound(path);
+
+
 
 void say(const wchar_t* message) {
 
@@ -143,6 +153,8 @@ void Render()
 	 
 	//control();
 
+	
+
 }
 
 
@@ -249,7 +261,7 @@ HRESULT InitD3D(HWND hWnd, int dx, int dy, int w)
 	g_pd3dDevice->SetViewport(&vp);
 
 	ShowCursor(FALSE);
-	srand(GetTickCount64());
+	srand(static_cast<unsigned int>(GetTickCount64()));
 	clear(0, 0, 0);
 
 
@@ -260,10 +272,9 @@ HRESULT InitD3D(HWND hWnd, int dx, int dy, int w)
 	LoadBMP(MWC(fileName2));
 
 
-	//test();
-	//Sleep(100);
-
-	//testmp3();
+	
+	
+	//std::this_thread::sleep_for(std::chrono::milliseconds(15));
 
 	return S_OK;
 }

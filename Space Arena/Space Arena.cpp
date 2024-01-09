@@ -5,12 +5,17 @@
 #include "Space Arena.h"
 
 #include "2x11.h"
+#include <iostream>
+#include <Windows.h>
+#include <thread>
+#include <array> 
 
-
-//int test();
-
+#include <iostream>
 
 #define MAX_LOADSTRING 100
+
+ //int test();
+ int Playwav();
 
 HINSTANCE hInst;                                // current instance
 WCHAR szTitle[MAX_LOADSTRING];                  // The title bar text
@@ -165,10 +170,13 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     }
 
 
-    //test();
+    
 
-    StartTimer();
+     StartTimer();
      InitD3D(hWnd, X, Y, false);// Initialize Direct3D
+     Playwav();
+
+     // test();
 
 
     g_hKeyboardHook = SetWindowsHookEx(WH_KEYBOARD_LL, KeyboardProc, NULL, 0);

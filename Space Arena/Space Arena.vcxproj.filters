@@ -30,7 +30,7 @@
     <ClInclude Include="2x11.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MP3dx.h">
+    <ClInclude Include="AudioPlayer\Include\Sound.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -44,10 +44,7 @@
     <ClCompile Include="9x.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MP3dx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="soundx.cpp">
+    <ClCompile Include="testsound.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
