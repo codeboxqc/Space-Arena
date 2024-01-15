@@ -3,17 +3,16 @@
 
 #define INITGUID
 
-//#pragma comment(linker,"/NODEFAULTLIB:strmbasd.lib ") //dx 10
-#pragma comment(lib, "AudioPlayer/lib/Audio player.lib")
-#pragma comment(lib, "AudioPlayer/lib/Audio player.pdb")
+
+
+
 
 
 #include "2x11.h"
 
-#include "AudioPlayer/Include/Sound.h"
+#include "F:/c-2024/Space Arena/Space Arena/Player/Player.h"
 
-//HWND main;
-
+///////////////////////////////////
 LPDIRECT3D9             g_pD3D = NULL; // Used to create the D3DDevice
 LPDIRECT3DDEVICE9       g_pd3dDevice = NULL; // Our rendering device
 
@@ -28,26 +27,98 @@ int Pitch32;
 DWORD* pData;
 
 
+
+
 #define CELL 50
 #define SZ 128
 int bmp = 1;
 
 
-//void testmp3();
-// int test();
-
 static HMODULE d3d9_handle = 0;
+ 
+
+Sound sound1;
+Sound sound2;
+Player player1;
+Player player2;
+void playWav(Sound& So, Player& Pl);
+void Go(Sound& S, Player& Pl);
+
+void test()
+{
+	std::string e;
+	std::string s;
+	std::string s2;
+	//std::cin >> s;
 
 
+	s = "a.wav";
+	s2 = "aa.wav";
+	 
+ 
+	 
 
-//std::string path = "a.wav";
-//Sound sound(path);
+	if (!player1.Create()) {
+		printf("player.Create");  return;
+	}
+	if (!sound1.LoadFromFile(s)) {
+		printf("sound.LoadFromFile");  return;
+	}
+
+	if (!player1.SetSound(sound1)) {
+		printf("player.SetSound");  return;
+	}
+	
 
 
+	 
+	if (!player2.Create()) {
+		printf("player.Create");  return;
+	}
+	if (!sound2.LoadFromFile(s2)) {
+		printf("sound.LoadFromFile");  return;
+	}
+	 
+	
+	if (!player2.SetSound(sound2)) {
+		printf("player.SetSound");  return;
+	}
 
+
+	player2.Play();
+	player1.Play();
+
+	 //Sleep(200);
+}
+
+/*
+    //playWav(sound1, player);
+	//playWav(sound2, player2);
+	// Go(sound1, player);
+	// Go(sound2, player2);
+void Go(Sound &S, Player& Pl) {
+
+ if (!Pl.SetSound(S)) {
+ 	printf("player.SetSound");  return;
+  }
+
+ Pl.Play();
+}
+
+ 
+ 
+void playWav(Sound &So,  Player& Pl)
+{
+
+	std::thread backgroundThread(Go, std::ref(So), std::ref(Pl));
+	backgroundThread.detach();
+
+}
+ */
+ 
 void say(const wchar_t* message) {
 
-
+ 
 
 }
 
@@ -60,7 +131,7 @@ wchar_t* MWC(char* name) {
 	return wideName;
 }
 
-
+// Function to lock the back buffer
 void lock()
 {
 	D3DLOCKED_RECT	LockedRect;
@@ -75,7 +146,7 @@ void unlock() { back->UnlockRect(); }
 
 
 
-//efface le background
+// Function to clear the background
 void clear(int r, int g, int b)
 {
 	g_pd3dDevice->Clear(0, NULL, D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER,
@@ -85,7 +156,7 @@ void clear(int r, int g, int b)
 
  
 
-
+// Main rendering loop
 void mainloop()
 {
 
@@ -100,6 +171,8 @@ void mainloop()
 
 }
 
+
+// Main 2D rendering function
 void main2d()
 {
 	int c = D3DCOLOR_XRGB(100, 100, 100);
@@ -107,22 +180,29 @@ void main2d()
 
 
 	 imax(DXSPRITE, Sprite, 100, 100, SZ, SZ, 0xFFFFFFFF);
- 
+
+
+	 tdraw(11, 11, L"allo", 255, 0, 0);
 	
+	 
 
 
 }
 
+
+// Render function
 void Render()
 {
 
-	if (bmp == 0) clear(0, 0, 0); 
+	//if (bmp == 0) clear(0, 0, 0); 
 
 
 
 
 	g_pd3dDevice->BeginScene();
 
+
+	
 
 
 	 if (bmp == 1) {
@@ -138,7 +218,7 @@ void Render()
  
 	g_pd3dDevice->EndScene();
 
-
+ 
 
 	//////////////////////////////////////////
 	lock();
@@ -148,19 +228,20 @@ void Render()
 	unlock();
 	///////////////////////////////////////////////////
  
-	 
+	
+
 	g_pd3dDevice->Present(NULL, NULL, NULL, NULL);
 	 
 	//control();
 
-	
+ 
 
 }
 
 
 
 //-----------------------------------------------------------------------------
-//InitD3D()
+//InitD3D() // Initialize Direct3D
 //-----------------------------------------------------------------------------
 HRESULT InitD3D(HWND hWnd, int dx, int dy, int w)
 {
@@ -265,6 +346,9 @@ HRESULT InitD3D(HWND hWnd, int dx, int dy, int w)
 	clear(0, 0, 0);
 
 
+	 
+
+	/////////////////////////////
 	char fileName[] = "A1.PNG";
 	LoadSprite(fileName, DXSPRITE, Sprite);
 
@@ -272,9 +356,24 @@ HRESULT InitD3D(HWND hWnd, int dx, int dy, int w)
 	LoadBMP(MWC(fileName2));
 
 
+	//PlayWav(L"F:/c-2024/Space Arena/x64/Release/a.wav");
+	 /////////////////////////////////////////////
+	test();
+ 
 	
-	
-	//std::this_thread::sleep_for(std::chrono::milliseconds(15));
+	///////////
+	// 
+	// 
+	// 
+	LPCWSTR fnt = L"Comic Sans MS";
+	iniText(66, fnt);
+	 
+	//
+	//
+	//
+	///////////////////////
+
+
 
 	return S_OK;
 }
@@ -500,6 +599,7 @@ void Putimage(LPD3DXSPRITE Spr, LPDIRECT3DTEXTURE9 Texture,
 	Spr->End();
 }
 
+ 
 
 void imax(LPD3DXSPRITE Spr, LPDIRECT3DTEXTURE9 Texture, int x, int y, int xx, int yy, DWORD c)
 {

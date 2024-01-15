@@ -140,8 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="2x11.h" />
-    <ClInclude Include="AudioPlayer\Include\Sound.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Player\Player.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Space Arena.h" />
     <ClInclude Include="targetver.h" />
@@ -149,8 +149,12 @@
   <ItemGroup>
     <ClCompile Include="2Dx11.cpp" />
     <ClCompile Include="9x.cpp" />
+    <ClCompile Include="font.cpp" />
+    <ClCompile Include="palette.cpp" />
+    <ClCompile Include="Player\Player.cpp" />
+    <ClCompile Include="Player\Sound.cpp" />
     <ClCompile Include="Space Arena.cpp" />
-    <ClCompile Include="testsound.cpp" />
+    <ClCompile Include="util.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Space Arena.rc" />

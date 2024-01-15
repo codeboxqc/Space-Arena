@@ -14,8 +14,9 @@
 
 #define MAX_LOADSTRING 100
 
- //int test();
- int Playwav();
+int InitXaudio2();
+int closeXaudio2();
+ 
 
 HINSTANCE hInst;                                // current instance
 WCHAR szTitle[MAX_LOADSTRING];                  // The title bar text
@@ -170,13 +171,23 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     }
 
 
+       const wchar_t* textToSpeak = L"Space arena";
+      talk(textToSpeak);
+
+     //const wchar_t* lf = L"a.txt";
+     //opentxtfiletalk(lf);
+  
+ 
+ 
+
     
 
      StartTimer();
+      //InitXaudio2();
+      //tes();
      InitD3D(hWnd, X, Y, false);// Initialize Direct3D
-     Playwav();
-
-     // test();
+  
+   
 
 
     g_hKeyboardHook = SetWindowsHookEx(WH_KEYBOARD_LL, KeyboardProc, NULL, 0);
@@ -213,6 +224,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
     // Cleanup code...
     UnhookWindowsHookEx(g_hKeyboardHook);
+    
+    int closeXaudio2();
+ 
     return 0;
 }
 
