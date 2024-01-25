@@ -35,14 +35,18 @@ int bmp = 1;
 
 
 static HMODULE d3d9_handle = 0;
+
+
  
 
 Sound sound1;
 Sound sound2;
 Player player1;
 Player player2;
+
 void playWav(Sound& So, Player& Pl);
 void Go(Sound& S, Player& Pl);
+
 
 void test()
 {
@@ -183,6 +187,8 @@ void main2d()
 
 
 	 tdraw(11, 11, L"allo", 255, 0, 0);
+
+	
 	
 	 
 
@@ -212,8 +218,10 @@ void Render()
 	 }
 
 
-
+	// Renderparticle();
 	main2d();
+
+   
 
  
 	g_pd3dDevice->EndScene();
@@ -339,6 +347,7 @@ HRESULT InitD3D(HWND hWnd, int dx, int dy, int w)
  
 	D3DVIEWPORT9 vp = { 0, 0, dx, dy, 0.0f, 1.0f };
 
+	
 	g_pd3dDevice->SetViewport(&vp);
 
 	ShowCursor(FALSE);
@@ -358,7 +367,7 @@ HRESULT InitD3D(HWND hWnd, int dx, int dy, int w)
 
 	//PlayWav(L"F:/c-2024/Space Arena/x64/Release/a.wav");
 	 /////////////////////////////////////////////
-	test();
+	//test();
  
 	
 	///////////

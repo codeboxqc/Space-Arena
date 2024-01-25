@@ -17,6 +17,8 @@
 int InitXaudio2();
 int closeXaudio2();
  
+int playmidi(const char* filename);
+
 
 HINSTANCE hInst;                                // current instance
 WCHAR szTitle[MAX_LOADSTRING];                  // The title bar text
@@ -115,7 +117,8 @@ ATOM MyRegisterClass(HINSTANCE hInstance)
     wcex.hInstance = hInstance;
     wcex.hIcon = LoadIcon(hInstance, MAKEINTRESOURCE(IDI_SPACEARENA));
     wcex.hCursor = LoadCursor(nullptr, IDC_ARROW);
-    wcex.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1);
+    //wcex.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1);
+    wcex.hbrBackground = CreateSolidBrush(RGB(0, 0, 0));
     wcex.lpszMenuName = nullptr;  // Remove the menu reference
     wcex.lpszClassName = szWindowClass;
     wcex.hIconSm = LoadIcon(wcex.hInstance, MAKEINTRESOURCE(IDI_SMALL));
@@ -171,8 +174,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     }
 
 
-       const wchar_t* textToSpeak = L"Space arena";
-      talk(textToSpeak);
+     //  const wchar_t* textToSpeak = L"Space arena";
+     //talk(textToSpeak);
 
      //const wchar_t* lf = L"a.txt";
      //opentxtfiletalk(lf);
@@ -188,7 +191,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
      InitD3D(hWnd, X, Y, false);// Initialize Direct3D
   
    
-
+     playmidi("a.mid");
 
     g_hKeyboardHook = SetWindowsHookEx(WH_KEYBOARD_LL, KeyboardProc, NULL, 0);
 

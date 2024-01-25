@@ -33,6 +33,357 @@
     <ClInclude Include="Player\Player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="xprtdefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vptype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vpnotify.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vpconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="videoacc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vfwmsgs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uuids.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tuner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tune.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="strmif.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Segment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rmxftmpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rmxfguid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="regbag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qnetwork.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="playlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="multimon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Msvidctl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mstve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mstvca.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mpegtype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mpconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mmstream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="medparam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mediaobj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mediaerr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ksuuids.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ksproxy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ksmedia.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ksguid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Iwstdec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="il21dec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="evcode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="errors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="edevdefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dxva.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dxtrans.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dxfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dxerr8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dx7todx8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dvp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dvoice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dvdmedia.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dvdevcod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dshowasf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DShow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dsetup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dplobby8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dplobby.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dplay8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dplay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dpaddr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dmusics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dmusici.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dmusicf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dmusicc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dmusbuff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dmplugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dmort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dmoreg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dmoimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dmodshow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dmo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dmksctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dmerror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dmdls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dls2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dls1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dinputd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dinput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ddstream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ddrawex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ddraw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dxsprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dxshapes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dxmath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dxerr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dxcore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dx8tex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dx8shape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dx8mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dx8math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dx8effect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dx8core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dx8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dtypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3drmwin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3drmobj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3drmdef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3drm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dcaps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d8types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d8caps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="comlite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bdatypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bdatif.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bdamedia.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bdaiface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="basetsd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aviriff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="austream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="audevcod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atsmedia.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Amvideo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="amva.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="amstream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="amparse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="amaudio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="activecf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Space Arena.cpp">
@@ -47,9 +398,6 @@
     <ClCompile Include="font.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="palette.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="util.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -57,6 +405,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Player\Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="midi.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -75,5 +426,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Tuner.tlb" />
+    <None Include="Msvidctl.tlb" />
+    <None Include="dxsdk.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="d3dxmath.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="d3dx8math.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="d3dvec.inl">
+      <Filter>Header Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
